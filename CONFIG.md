@@ -15,3 +15,9 @@ We would store separate configurations for each environment of limits_service by
 
    - So, in application.properties add:
      `spring.profiles.active=dev` or `spring.profiles.active=qa` or `spring.profiles.active=default`
+
+3. Consequently, by separating out the configuration from your applications, you are making your operations easier.
+
+   - Your operations team can control all configuration related to all microservices for multiple environments in a single location.
+
+   - So, whenever they would want to make a change to configuration of some environemt of some microservice - they would make a change in this centralised GitHub repositry, commit it and that's it changed is ready and distributed to multiple environments!
